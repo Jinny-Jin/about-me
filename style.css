@@ -32,7 +32,7 @@ a {
   color: black;
 }
 
-a:hover {
+a.logo:hover {
   color: hsl(269, 100%, 82%);
 }
 .banner {
@@ -56,6 +56,13 @@ a.banner-link {
   margin-top: 30px;
   margin-left: 50px;
 }
+a.banner-link:hover {
+  border: 1px solid hsla(269, 92%, 86%, 0.863);
+  border-radius: 8px;
+  padding: 2px 7px;
+  background-color: hsla(269, 92%, 86%, 0.863);
+}
+
 #me-page {
   position: absolute;
   right: 450px;
@@ -93,8 +100,8 @@ a.banner-link {
 .my-container {
   border: 2px solid rgba(207, 163, 255, 0);
   border-right: none;
-  width: 450px;
-  margin-left: 200px;
+  width: 400px;
+  margin-left: 100px;
 }
 .introduce {
   font-weight: 530;
@@ -104,37 +111,26 @@ a.banner-link {
 /**사진**/
 
 .my-img {
-  width: 500px;
-  height: 500px;
+  width: 410px;
+  height: 450px;
   position: relative;
+  overflow: hidden;
+}
+.my-img .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  transition: left 0.5s ease-out;
+  padding-left: 20px;
 }
 
 .inner img {
-  width: 300px;
-  height: 400px;
-  position: relative;
-  top: 10px;
-  left: -10px;
+  width: 360px;
+  height: 450px;
 }
 
 /**Tmi**/
-/**.boo i{
-    font-size: 50px;
-}
-.hippoboo{
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 350px;
-    margin-bottom: -20px;
-}
-.Boo{
-    position: relative;
-    right: 45px;
-    bottom: 13px;
-}
-.tmi .hippoboo{
-    position: absolute;
-}**/
 
 /**본문**/
 /**제목**/
